@@ -29,7 +29,6 @@
         "VIEW_COMPILED_PATH": "/tmp",
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
-        "SESSION_DRIVER": "database",
-        "SESSION_LIFETIME": 120
+        "SESSION_DRIVER": "database"
     }
 }
