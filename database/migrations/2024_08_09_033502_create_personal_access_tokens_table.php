@@ -32,10 +32,10 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('personal_access_tokens');
         Schema::table('personal_access_tokens', function (Blueprint $table) {
             // Revert the change if needed
             $table->string('tokenable_id')->change();
         });
+        Schema::dropIfExists('personal_access_tokens');
     }
 };

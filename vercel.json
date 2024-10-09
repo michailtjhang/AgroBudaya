@@ -17,6 +17,7 @@
     ],
     "outputDirectory": "public",
     "env": {
+        "APP_NAME": "AgroBudaya",
         "APP_ENV": "production",
         "APP_DEBUG": "true",
         "APP_URL": "https://agro-budaya.vercel.app/",
