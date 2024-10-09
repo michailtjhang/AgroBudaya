@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::create('budaya', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->string('nama_budaya');
+            $table->string('image');
+            $table->text('deskripsi');
             $table->time('jam_operasional');
             $table->decimal('biaya', 10, 2);
             $table->timestamps();

@@ -27,6 +27,8 @@ class BudayaController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'nama_budaya' => 'required|string',
+            'image' => 'required|string',
+            'deskripsi' => 'required|string',
             'jam_operasional' => 'required|time',
             'biaya' => 'required|numeric',
         ]);
@@ -41,6 +43,8 @@ class BudayaController extends Controller
         try {
             $budaya = Budaya::create([
                 'nama_budaya' => $request->nama_budaya,
+                'image' => $request->image,
+                'deskripsi' => $request->deskripsi,
                 'jam_operasional' => $request->jam_operasional,
                 'biaya' => $request->biaya,
             ]);
@@ -73,6 +77,8 @@ class BudayaController extends Controller
         
         $validator = Validator::make($request->all(), [
             'nama_budaya' => 'required|string',
+            'image' => 'required|string',
+            'deskripsi' => 'required|string',
             'jam_operasional' => 'required',
             'biaya' => 'required|numeric',
         ]);
