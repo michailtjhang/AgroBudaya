@@ -6,4 +6,4 @@ Route::get('/', function () {
     abort(404);
 });
 
-require __DIR__.'/api.php';
+// require __DIR__.'/api.php';
